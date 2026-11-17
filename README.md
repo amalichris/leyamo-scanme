@@ -1,8 +1,10 @@
 # Leyamo ScanMe - Smart QR Code Redirect
 
+> **Retired:** The ScanMe Vercel project has been deleted. `scanme.joinleyamo.com` is now configured in the Leyamo landing-page Vercel project to redirect all visitors to `https://joinleyamo.com/`. Device-specific App Store redirects are no longer active. This repository is retained for historical reference.
+
 A fast, lightweight React app that detects user devices and redirects them to the appropriate app store or website. Designed for QR codes on printed materials at running events.
 
-## Features
+## Historical features
 
 - **Smart Device Detection**: Automatically detects iOS, Android, and desktop devices
 - **Fast Redirects**: 650ms delay with smooth loading animation
@@ -10,7 +12,7 @@ A fast, lightweight React app that detects user devices and redirects them to th
 - **Mobile Optimized**: Fully responsive design for all screen sizes
 - **Production Ready**: Optimized for Vercel deployment
 
-## Setup
+## Historical local setup
 
 1. **Install Dependencies**
    ```bash
@@ -41,28 +43,15 @@ A fast, lightweight React app that detects user devices and redirects them to th
    npm run build
    ```
 
-## Device Detection Logic
+## Historical device detection logic
 
 - **iOS**: Redirects to App Store (iPhone, iPad, iPod)
 - **Android**: Redirects to Google Play Store
 - **Desktop/Other**: Redirects to fallback URL (main website)
 
-## Deployment to Vercel
+## Deployment
 
-1. **Connect Repository**
-   - Push this repository to GitHub
-   - Import project in Vercel dashboard
-
-2. **Configure Environment Variables**
-
-   In Vercel project settings, add these environment variables:
-   - `VITE_APP_STORE_URL`
-   - `VITE_GOOGLE_PLAY_URL`
-   - `VITE_FALLBACK_URL`
-
-3. **Deploy**
-   - Vercel will automatically detect Vite and build
-   - Your app will be live at scanme.joinleyamo.com
+This project is retired and should not be redeployed to serve `scanme.joinleyamo.com`. The redirect is managed in the Leyamo landing-page project’s Vercel domain settings.
 
 ## Project Structure
 
